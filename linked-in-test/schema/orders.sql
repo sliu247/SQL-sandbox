@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS orders;
+
 CREATE TABLE orders (
   order_id	INT PRIMARY KEY,
   cus_id	INT,	-- YYYY-MM-DD
@@ -15,3 +17,14 @@ VALUES
   (102, 2, '2023-10-02', 400.00, 0.00, 'Shipped'),
   (103, 2, '2024-11-19', 100, 25.35, 'TBD'),
   (999, NULL, '2027-06-16', 1200, 0.00, 'TBD');
+
+-- INSERT INTO orders(order_id, cus_id, cost)
+-- VALUES
+--   (105, 3, 300.00),
+--   (106, 2, 150.00),
+--   (107, 1, 200),
+--   (108, 2, 150),
+--   (109, 1, 75.50),
+--   (110, 3, 100),
+--   (111, 1, 100.75);
+  
